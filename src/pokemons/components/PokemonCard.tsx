@@ -24,7 +24,7 @@ export default function PokemonCard({ pokemon }: pokemonProps) {
                     <p className="pt-2 text-lg font-semibold text-gray-50 capitalize">{pokemon.name}</p>
                     <p className="text-sm text-gray-100">N°{pokemon.id}</p>
                     <div className="mt-5">
-                        <Link href={`/dashboard/pokemons/${pokemon.id}`}
+                        <Link href={`/dashboard/pokemon/${pokemon.name}`}
                             className="border rounded-full py-2 px-4 text-xs font-semibold text-gray-100 
                             hover:bg-gray-100 hover:text-gray-800">
                             Detalles pokemon
