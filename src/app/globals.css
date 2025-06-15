@@ -5,6 +5,56 @@
   --foreground: #171717;
 }
 
+@theme {
+  --color-grass: #49d0b0;
+  --color-grass-light: #61e2c9;
+  --color-fire: #fb6d6c;
+  --color-fire-light: #f88c8a;
+  --color-water: #78befc;
+  --color-water-light: #8ed0ff;
+  --color-electric: #f2cb30;
+  --color-bug: #94bc4a;
+  --color-poison: #a040a1;
+  --color-ice: #98d8d8;
+  --color-dragon: #7038f8;
+  --color-dark: #705746;
+  --color-fairy: #D685AD;
+  --color-ghost: #705898;
+  --color-steel: #B7B7CE;
+  --color-fighting: #E5444B;
+  --color-psychic: #f85888;
+  --color-ground: #E2BF65;
+  --color-rock: #b8a038;
+  --color-flying: #7da6de;
+  --color-normal: #aab09f;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.animate-spin-slow {
+  animation: spin 10s linear infinite;
+}
+
+@keyframes translateItems {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.anime-content {
+  animation: translateItems 0.5s ease;
+}
+
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
